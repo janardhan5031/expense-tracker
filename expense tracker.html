@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .dlt_btn{
+        position: absolute;
+        left: 350px;
+        color: red;
+        border-radius: 50%;
+        border-color: rgb(245, 98, 98);
+    }
+    .edt_btn{
+        position: absolute;
+        left: 450px;
+        color: rgba(118, 221, 49, 0.527);
+        border-radius: 50%;
+        border-color: rgb(93, 173, 82);
+    }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Expense Tracker</h2>
+    <div style="text-align: center;">   
+        <form onsubmit="addData(event)">
+            <label for="cost">Choose Expense</label>
+            <input type="number" id="cost" value="" >
+            <label for="categery">Enter the reason</label>
+            <select id="categery">
+                <option value="maintainence">maintainence</option>
+                <option value="damaged">damaged</option>
+                <option value="break-down">break-down</option>
+            </select>
+            <label for="cars">Enter the categery</label>
+            <select id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+    <div>
+        <ul id="list-items">
+            
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="expense tracking.js"></script>
+
+</body>
+</html>
